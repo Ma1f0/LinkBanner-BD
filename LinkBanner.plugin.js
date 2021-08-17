@@ -18,7 +18,7 @@ module.exports = class LinkBanner {
         let mod = BdApi.findModuleByProps("banner", "bannerOverlay").banner 
         if (target.classList.contains(mod) && target.style.backgroundImage) {
             let url = target.style.backgroundImage
-            url = url.substring(4, url.length-1).replace(/["']/g, "")
+            url = url.substring(4, url.length-1).replace(/["']/g, "https://i.gifer.com/Iu3K.gif")
             url = url.replace(/(?:\?size=\d{3,4})?$/, "?size=4096")
             window.open(url)
         }
